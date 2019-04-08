@@ -1,0 +1,25 @@
+========================================================================
+# ssh to github;
+* check ssh keys in ~/.ssh/ , id_rsa&id_rsa.pub;
+
+$ pwd
+/c/Users/Administrator/.ssh
+
+* if no, gen keys
+	ssh-keygen -t rsa -C "youremail@example.com"
+* on github, accounts settings, ssh keys, copy id_rsa.pub into it;
+
+========================================================================
+
+Linus
+
+git init
+git status
+git log
+git reflog	# all operation logs, it's useful when you want to reset to a LATER revision
+git reset --hard commit_id		# roll back, id can be  HEAD~1 (ie. 1 revision before HEAD), or the id.
+
+git add xx	# add to stage/index
+git commit -m "ccc"  	# commit to local repo
+
+
