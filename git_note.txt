@@ -8,7 +8,11 @@ $ pwd
 * if no, gen keys
 	ssh-keygen -t rsa -C "youremail@example.com"
 * on github, accounts settings, ssh keys, copy id_rsa.pub into it;
-
+* ssh -T git@github.com     # this is to test
+* git init, add, commit ...;
+* git remote add origin git@github.com:tingdev/learngit.git     #only once
+* git push -u origin master			# first time
+* git push					# later
 ========================================================================
 
 Linus
