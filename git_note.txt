@@ -26,6 +26,6 @@ git reflog	# all operation logs, it's useful when you want to reset to a LATER r
 git reset --hard commit_id		# roll back, id can be  HEAD~1 (ie. 1 revision before HEAD), or the id.
 
 git add xx	# add to stage/index
-git commit -m "ccc"  	# commit to local repo
+git commit -m "ccc"  	# commit from stage to local repo
 
 
