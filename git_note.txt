@@ -72,3 +72,21 @@ git branch -d dev	# delete branch dev, if already push dev to orgin, then you ca
 git log --graph --pretty=oneline --abbrev-commit	# graph show, each one line, commit id abbrev.
 
 git merge --no-ff dev	# explicitly noted no fast-forward
+
+========================================================================
+
+# NOTE: files not commited on dev branch(not staged(e.g. newly added) or even staged(i.e. added)) 
+# will be visable by other branches(such as master). to avoid this, use 'git stash' to temporarily store the state on dev branch,
+# then you can switch to other branch with a clean working space, and do sth.(e.g. fix mergency bugs).
+# after that, switch back to dev branch and 'git stash pop' to recover the state on dev branch
+
+git checkout dev	# on dev branch
+......			# add sth. or modify sth.  suppose it is NOT suitable to commit yet, but have to fix emergency bug on master
+git stash		# save state, so that the modification is not visible to other branches.
+git checkout master	# switch to other branch to fix emergency bug. w/o seeing the temporary modification on dev branch
+......			# fixing on master
+git checkout dev	# switching back to dev again
+git stash pop		# recover the state previously saved, and continue work on dev branch.
+
+
+
