@@ -46,4 +46,17 @@ git reset --hard commit_id		# roll back, id can be  HEAD~1 (ie. 1 revision befor
 git checkout -- file
 
 
+========================================================================
+at begining, HEAD --> master
+
+git checkout -b dev	# create & switch to 'dev' branch
+	git branch dev
+	git checkout dev
+
+git branch	# added in dev brach!
+
+
+
+
+
 
