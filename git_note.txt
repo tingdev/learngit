@@ -69,5 +69,6 @@ git branch -d dev	# delete branch dev, if already push dev to orgin, then you ca
 
 # this is the merge result of modifications on master and dev!
 
+git log --graph --pretty=oneline --abbrev-commit	# graph show, each one line, commit id abbrev.
 
 
