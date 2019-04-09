@@ -71,4 +71,4 @@ git branch -d dev	# delete branch dev, if already push dev to orgin, then you ca
 
 git log --graph --pretty=oneline --abbrev-commit	# graph show, each one line, commit id abbrev.
 
-
+git merge --no-ff dev	# explicitly noted no fast-forward
