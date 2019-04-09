@@ -65,6 +65,8 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin dev
 
+git branch -d dev	# delete branch dev, if already push dev to orgin, then you can still checkout dev from origin
+
 
 
 
