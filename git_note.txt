@@ -42,6 +42,9 @@ git commit -m "ccc"  	# commit from stage to local repo
 git reset --hard commit_id		# roll back, id can be  HEAD~1 (ie. 1 revision before HEAD), or the id.
 
 # if you want to discard changes in work copy, use checkout
+# but REMEMBER! if file is staged, git checkout will NOT overwrite it!!!!
+# SO, do unstaged file before checkout to discard unexpected changes!!
 git checkout -- file
+
 
 
