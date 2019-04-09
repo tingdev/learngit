@@ -13,13 +13,12 @@ $ pwd
 * ssh -T git@github.com     # this is to test
 * git init, add, commit ...;
 * git remote add origin git@github.com:tingdev/learngit.git     #only once
-* git push -u origin master			# first time
+* git push -u origin master			# first time,  push local master to remote(i.e. origin) master
 * git push					# later
 ========================================================================
 copy id_rsa & id_rsa.pub to a new computer
 
-git init
-git clone git@github.com:tingdev/learngit.git
+git clone git@github.com:tingdev/learngit.git	# clone git remote repo.  no need git init
 
 ========================================================================
 
