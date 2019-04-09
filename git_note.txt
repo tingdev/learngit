@@ -53,7 +53,11 @@ git checkout -b dev	# create & switch to 'dev' branch
 	git branch dev
 	git checkout dev
 
-git branch	# added in dev brach!
+git branch	# display branches
+
+git checkout master
+git merge dev	# merge dev to master, if no conflict, just move pointer, which is very fast!
+
 
 
 
