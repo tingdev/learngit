@@ -58,7 +58,12 @@ git branch	# display branches
 git checkout master
 git merge dev	# merge dev to master, if no conflict, just move pointer, which is very fast!
 
+# when github has no branch dev, git push will warn you and prompt with the correct cmd, which will create dev branch on github
+$ git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
+    git push --set-upstream origin dev
 
 
 
