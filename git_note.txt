@@ -91,5 +91,5 @@ git checkout master	# switch to other branch to fix emergency bug. w/o seeing th
 git checkout dev	# switching back to dev again
 git stash pop		# recover the state previously saved, and continue work on dev branch.
 
-
+# NOTE: although git stash can remember on which branch it's saved, you can pop it on any branch, so be careful!!!
 
