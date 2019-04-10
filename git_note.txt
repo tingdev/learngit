@@ -118,8 +118,4 @@ git remote -v
 member_new:
 git clone git@github.com:tingdev/learngit.git		# oooops! only master branch is visible
 git checkout -b dev origin/dev				# checkout orgin/dev to dev
-
-
-
-
-
+git push origin dev
