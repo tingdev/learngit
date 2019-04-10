@@ -76,12 +76,15 @@ git merge --no-ff dev	# explicitly noted no fast-forward
 ========================================================================
 
 # NOTE: files not commited on dev branch(not staged(e.g. newly added) or even staged(i.e. added)) 
-# will be visable by other branches(such as master). to avoid this, use 'git stash' to temporarily store the state on dev branch,
+# will be visable by other branches(such as master). to avoid this:
+# 1. 'git add' if not add to stage;
+# 2. 'git stash' to temporarily store the state on dev branch;
 # then you can switch to other branch with a clean working space, and do sth.(e.g. fix mergency bugs).
 # after that, switch back to dev branch and 'git stash pop' to recover the state on dev branch
 
 git checkout dev	# on dev branch
-......			# add sth. or modify sth.  suppose it is NOT suitable to commit yet, but have to fix emergency bug on master
+......			# newly add sth. or modify sth.  suppose it is NOT suitable to commit yet, but have to fix emergency bug on master
+git add .		# add to stage first, otherwise they won't be stash
 git stash		# save state, so that the modification is not visible to other branches.
 git checkout master	# switch to other branch to fix emergency bug. w/o seeing the temporary modification on dev branch
 ......			# fixing on master
