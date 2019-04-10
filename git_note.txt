@@ -93,3 +93,21 @@ git stash pop		# recover the state previously saved, and continue work on dev br
 
 # NOTE: although git stash can remember on which branch it's saved, you can pop it on any branch, so be careful!!!
 
+========================================================================
+
+git diff			# working copy vs. stage
+git diff --staged filepath	# staged vs. head
+git diff head filepath		# working copy vs. head
+git diff commit-id filepath	# working copy vs. commit-id
+git diff commit-id1 commit-id2
+git diff head head~1		# head vs. 1 before head
+git diff branchName filepath	# current branch vs. branchName
+
+
+To remember the diff partner, imaging the chart below. [xx] mean the arg(i.e. 'git diff xx'), two parts are near the arrow <--->
+	<-----------------------------> [head]
+workingcopy		   staged	local repo.
+	[noarg] <----->	 [--staged] <--->
+						
+========================================================================
+
