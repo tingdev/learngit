@@ -162,6 +162,12 @@ git push origin --tags         # push all tags
 
 git push origin :refs/tags/<tagname>   # delete remote tag after 'git tag -d x'
 
+========================================================================
+
+.gitignore file in workspace
+templates on https://github.com/github/gitignore
+
+git check-ignore -v <filename>		# to find which rule ignores the filename
 
 
 
