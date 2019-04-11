@@ -77,6 +77,9 @@ git log --graph --pretty=oneline --abbrev-commit	# graph show, each one line, co
 
 git merge --no-ff dev	# explicitly noted no fast-forward
 
+
+git branch -dr <remote/branch>	# delete remote branch
+
 ========================================================================
 
 # NOTE: files not commited on dev branch(not staged(e.g. newly added) or even staged(i.e. added)) 
@@ -169,5 +172,24 @@ templates on https://github.com/github/gitignore
 
 git check-ignore -v <filename>		# to find which rule ignores the filename
 
+========================================================================
 
+git config --global alias.unstage 'reset head'
+git config --global alias.co 'checkout'
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+./.git/config	# repo config
+~/.gitconfig	# global config in user main directory
+
+
+git log -p <file>
+git add -p <file>
+git commit -a
+git blame <file>
+git branch -av
+
+git remote show origin
+
+
+git help <command>
 
