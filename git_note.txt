@@ -1,4 +1,8 @@
-ref:https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013745374151782eb658c5a5ca454eaa451661275886c6000 
+ref:
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013745374151782eb658c5a5ca454eaa451661275886c6000 
+http://gitbook.liuhui998.com/4_2.html		# git rebase
+
+
 
 ========================================================================
 # ssh to github;
@@ -119,3 +123,33 @@ member_new:
 git clone git@github.com:tingdev/learngit.git		# oooops! only master branch is visible
 git checkout -b dev origin/dev				# checkout orgin/dev to dev
 git push origin dev
+
+--about rebase -----------------------------------
+# a good reference: http://gitbook.liuhui998.com/4_2.html
+# 2 members dev on the 2 different branches
+
+member 1 on branch a:
+git push		# push with 2 commits
+
+member 2 on branch b:
+git push		# push with 2 commits.
+* failed due		# usually you can git pull, git merge, git add, git commit, git push.
+			# the version tree looks separated and then merged.
+			# however, you can rebase
+git rebase a		# 2 patches will be generated internally, and rebase to branch a, then apply 2 patches, 
+			# and checkout branch b
+			# if there's no conflict, it's done
+* if there's conflict, fix it, git add, but do NOT git commit, and continue.
+git rebase --continue	# continue
+
+
+git rebase --abort	# you can abort at any time
+========================================================================
+# NOTE: git pull # ONLY pull current branch!!!!
+========================================================================
+
+
+
+
+
+
