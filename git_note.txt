@@ -50,6 +50,9 @@ git reset --hard commit_id		# roll back, id can be  HEAD~1 (ie. 1 revision befor
 git checkout -- file
 
 
+git reset head 			# will remain the changed file
+git reset --hard head		# will discard changes
+
 ========================================================================
 at begining, HEAD --> master
 
