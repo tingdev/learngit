@@ -81,7 +81,8 @@ git log --graph --pretty=oneline --abbrev-commit	# graph show, each one line, co
 git merge --no-ff dev	# explicitly noted no fast-forward
 
 
-git branch -dr <remote/branch>	# delete remote branch
+git branch -dr <remote/branch>	# delete remote branch,  *WARNING* it's ONLY deleted locally, i.e.  git branch -av does not show,
+				# BUT on origin, it's still there!!!!!!!!
 
 ========================================================================
 
