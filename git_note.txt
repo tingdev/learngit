@@ -147,8 +147,20 @@ git rebase --abort	# you can abort at any time
 ========================================================================
 # NOTE: git pull # ONLY pull current branch!!!!
 ========================================================================
+tagging
 
+git tag <tagname> [commit_id]  # tagging head or commit_id
+git tag -a <tagname> -m "tag coments" [commit_id]      # same as above, w/ tag comments
+git tag                                # show all tags briefly
+git show <tagname>             # show a tag verbosely
 
+git tag -d <tagname>
+
+**** above tagging is only saved locally ****
+git push origin <tagname>
+git push origin --tags         # push all tags
+
+git push origin :refs/tags/<tagname>   # delete remote tag after 'git tag -d x'
 
 
 
